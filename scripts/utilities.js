@@ -1,5 +1,7 @@
-function forEach(point) {
+  function forEach(pointsArray, revealPoint) {
             for(var i = 0; i < pointsArray.length; i++) {
+                revealPoint(i);
             }
-        }
-    pointsArray.forEach(revealPoint)
+  }
+
+//forEach(pointsArray, revealPoint);
