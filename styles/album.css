@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(58,23,63); /* sets the background color to an RGB value */
+}
+
 body.album {
     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
     background-repeat: no-repeat;
