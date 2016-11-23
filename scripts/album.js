@@ -29,7 +29,7 @@ var albumPicasso = {
     ]
 };
 
-var createSongRow = function(songNumber, songName, songlength) {
+var createSongRow = function(songNumber, songName, songLength) {
     var template = 
         '<tr class = "album-view-song-item">'
      +  '   <td class = "song-item-number">' + songNumber + '</td>'
