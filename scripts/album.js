@@ -83,14 +83,11 @@ window.onload = function() {
             if(targetClass === null) {
             alert('No Parent Found');
         }
-            while (currentParent.className != targetClass && currentParent.className !== null) {
+            while (currentParent && currentParent.className != targetClass) {
+                alert('No parent found with that class name');
             currentParent = currentParent.parentElement;
         }
-            if(currentParent === null) {
-                alert('No parent found with that class name');
-            }else{
              return currentParent;   
-            }    
         }
 };
     
@@ -99,7 +96,7 @@ window.onload = function() {
             case 'album-song-button':
             case 'ion-play':
             case 'ion-pause':
-                return findParentByClassName(element, 'song-tem-number');
+                return findParentByClassName(element, 'song-item-number');
             case 'album-view-song-item':
                 return element.querySelector('.song-item-number');
             case 'song-item-title':
