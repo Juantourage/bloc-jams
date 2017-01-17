@@ -15,15 +15,6 @@ var buildCollectionItemTemplate = function() {
     +'</div>'
     ;
 
-console.log(collectionItemTemplate);
-window.onload = function() {
-    // #1
-    var collectionContainer = document.getElementsByClassName('album-covers')[0];
-    
-    // #2
-    collectionContainer.innerHTML = ' ';
-
-
     return $(template);
 };
 
